@@ -1,0 +1,73 @@
+.cards {
+    margin-left: 100px;
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 392px;
+    height: 200px;
+    width: 100%;
+    border: 1px solid $corCinza;
+    border-radius: 8px;
+    background-color: $corPreta;
+
+    img {
+        border-radius: 8px;
+    }
+
+
+    &__conteudo {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+
+        &__botoes {
+            display: flex;
+            gap: 12px;
+
+            .botaoPreto {
+                background-color: $corPreta;
+                color: $corBranca;
+                border: solid 1px $corBranca;
+            }
+
+        }
+    }
+
+    .cardp {
+        color: $corCinza;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .cardh3 {
+        color: $corBranca;
+        font-weight: bold;
+        font-size-adjust: 18px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .cardpp {
+        color: $corBranca;
+        font-size: 14px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+
+        a {
+            color: yellow;
+        }
+    }
+
+    .cardppp {
+        color: $corCinza;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}

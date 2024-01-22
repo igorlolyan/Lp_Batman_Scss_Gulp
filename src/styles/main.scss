@@ -1,0 +1,103 @@
+@import 'variaveis';
+@import 'header';
+@import 'cards';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../images/Image.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 866px;
+    background-color: $corPreta;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 100px;
+}
+
+.botao {
+    width: 180px;
+    height: 40px;
+    background-color: $corPrincipal;
+    color: $corPreta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.botaoGrande {
+    max-width: 286px;
+    width: 100%;
+    height: 56px;
+    background-color: $corPrincipal;
+    color: $corPreta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 48px;
+}
+
+.botaoPequeno {
+    max-width: 100px;
+    width: 100%;
+    height: 26px;
+    background-color: $corPrincipal;
+    color: $corPreta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.footer {
+    background-color: $corPreta;
+    display: flex;
+    margin: 36px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footerP {
+        color: $corCinza;
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
